@@ -1,10 +1,16 @@
 package com.github.suloginscene.problemsolving.ndb.greedy;
 
+import java.util.Scanner;
+
+
 public class UntilOne {
 
     public int execute(String input) {
-        int n = getNumber(input);
-        int k = getDenominator(input);
+        Scanner scanner = new Scanner(input);
+
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+
 
         int count = 0;
 
@@ -18,16 +24,6 @@ public class UntilOne {
         }
 
         return count;
-    }
-
-    private int getNumber(String input) {
-        String[] tokens = input.split(" ");
-        return Integer.parseInt(tokens[0]);
-    }
-
-    private int getDenominator(String input) {
-        String[] tokens = input.split(" ");
-        return Integer.parseInt(tokens[1]);
     }
 
 }
