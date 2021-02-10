@@ -25,7 +25,7 @@ public class DivideCity {
         }
 
 
-        SetSet setSet = new SetSet();
+        SetSet2 setSet = new SetSet2();
         for (int i = 1; i < n + 1; i++) {
             HashSet<Integer> set = new HashSet<>();
             set.add(i);
@@ -92,7 +92,7 @@ class Path implements Comparable<Path> {
 }
 
 
-class SetSet extends HashSet<Set<Integer>> {
+class SetSet2 extends HashSet<Set<Integer>> {
 
     boolean isLinked(int a, int b) {
         return findSet(a) == findSet(b);
